@@ -1,0 +1,94 @@
+
+<html>
+<head>
+<title>Show All Information</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+body{    
+    background-color:#2F3035;
+    background:url(2954.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+}
+
+h1{
+	font-family:sans-serif;
+	font-size:40px;
+	color: #665517;
+	text-align: center;
+	vertical-align:center;
+	height:50px;
+}
+
+.column {
+    float: center;
+    width: 20%;
+    padding: 50px;
+	font-color: white;
+	font-family: sans-serif;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #665517;
+    text-align: center;
+}
+
+select {
+        width: 150px;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+
+input{
+   width: 150px;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+</style>
+<body>
+<nav class="menu">
+    <ul>
+      <li><a class="navbar-brand" href="web.html">
+      <div class="logo-image">
+            <img src="1234.png" class="img-fluid" width="50" height="50">
+      </div>
+      </a></li>
+        <li><a href  ="about.html">About</a></li>
+		<li><a class="active" href  ="information.html">Information</a></li>
+        <li><a class="active" href  ="search.html">Search</a></li>
+		<li><a class="active" href  ="edit.html">Edit</a></li>
+        <li><a class="active" href  ="add.html">Add</a></li>
+		<li><a href  ="delete.html">Delete</a></li>
+    </ul>
+</form>
+</nav>
+<form action="http://localhost/showall.php" method="post">	
+	<h1>CHOOSE A TABLE</h1>
+	<br>
+	<center>
+	<select name="f_from"> 
+	<option value="Customer" selected>Customer</option> 
+	<option value="Product">Product</option> 
+	<option value="Supplier">Supplier</option>
+	<option value="Transaction">Transaction</option>
+	</select></center>
+
+	<br>
+	<br>
+	<center><input type="submit" value="Submit"></center>
+	<br>
+	<br>
+	<form action="information.html">
+	</form>
+</body>
+</html>

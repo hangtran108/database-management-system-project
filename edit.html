@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Supermarket</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+body{    
+    background:url(100.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+}
+
+h1{
+	font-family:sans-serif;
+	font-size:40px;
+	color: black;
+	text-align: center;
+	vertical-align:center;
+	height:50px;
+}
+
+select {
+        width: 150px;
+        margin: 10px;
+        font-size: 20px;
+    }
+    select:focus {
+        min-width: 100px;
+        width: auto;
+    }
+
+    .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+
+</style>
+<body>
+<nav class="menu">
+    <ul>
+      <li><a class="navbar-brand" href="web.html">
+      <div class="logo-image">
+            <img src="1234.png" class="img-fluid" width="50" height="50">
+      </div>
+      </a></li>
+        <li><a href  ="about.html">About</a></li>
+		<li><a class="active" href  ="information.html">Information</a></li>
+        <li><a class="active" href  ="search.html">Search</a></li>
+		<li><a class="active" href  ="edit.html">Edit</a></li>
+        <li><a class="active" href  ="add.html">Add</a></li>
+		<li><a href  ="delete.html">Delete</a></li>
+    </ul>
+</form>
+
+</nav>
+
+<div class="content">
+	    <center><h1> SELECT ONE TO EDIT </h1>
+	<select id="choosing">
+
+	<option selected disabled>(null)</option>
+    <option value="editcustomer.html">Customer</a></option>
+    <option value="editsupplier.html">Supplier</option>
+    <option value="editproduct.html">Product</option>
+    <option value="edittransaction.html">Transaction</option>
+    </select>
+	</div>
+	
+	<script type="text/javascript">
+        $(function(){
+		    $('#choosing').on('change', function(){
+			var url = $(this).val();
+			if(url){
+			    window.location = url;
+			}
+			return false;
+			});
+		});
+    </script>
+<div class="footer">
+    <p><center>Copyright Dec 2021&copy; </center></p>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

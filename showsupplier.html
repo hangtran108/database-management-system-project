@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Supermarket</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+body{    
+    background:url(c2.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+}
+
+h2{
+	font-family:sans-serif;
+	font-size:40px;
+	color: #665517;
+	text-align: center;
+	vertical-align:center;
+	height:50px;
+}
+
+select {
+        width: 150px;
+        margin: 10px;
+        font-size: 15px;
+    }
+
+input{
+    font-family:sans-serif;
+	font-size:18px;
+	margin-left: 150px;
+    }
+
+    .checklist{
+    font-family:sans-serif;
+	font-size:18px;
+	margin-left: 500px;
+}
+
+</style>
+<body>
+<nav class="menu">
+    <ul>
+      <li><a class="navbar-brand" href="web.html">
+      <div class="logo-image">
+            <img src="1234.png" class="img-fluid" width="50" height="50">
+      </div>
+      </a></li>
+        <li><a href  ="about.html">About</a></li>
+		<li><a class="active" href  ="information.html">Information</a></li>
+        <li><a class="active" href  ="search.html">Search</a></li>
+		<li><a class="active" href  ="edit.html">Edit</a></li>
+        <li><a class="active" href  ="add.html">Add</a></li>
+		<li><a href  ="delete.html">Delete</a></li>
+    </ul>
+</form>
+
+</nav>
+
+<center><h2>SELECT ATTRIBUTES TO SHOW SUPPLIER</h2></center>
+<form action="http://localhost/showsupplier.php" method="post">
+    <div class = "checklist">
+        <input type = "hidden" name = "supplier_id" value = "0">
+        <input type = "checkbox" name = "supplier_id" value = "1"> Supplier ID <br>
+        <input type = "hidden" name = "name" value = "0">
+        <input type = "checkbox" name = "name" value = "1"> Supplier Name <br>
+        <input type = "hidden" name = "type" value = "0">
+        <input type = "checkbox" name = "type" value = "1"> Type <br>
+        <input type = "hidden" name = "supplier_address" value = "0">
+        <input type = "checkbox" name = "supplier_address" value = "1"> Supplier Address <br>
+        <input type = "hidden" name = "city" value = "0">
+        <input type = "checkbox" name = "city" value = "1"> City <br>
+        <input type = "hidden" name = "postcode" value = "0">
+        <input type = "checkbox" name = "postcode" value = "1"> Postcode <br>
+        <input type = "hidden" name = "supplier_phone" value = "0">
+        <input type = "checkbox" name = "supplier_phone" value = "1"> Supplier Phone <br>
+        <input type = "hidden" name = "supplier_email" value = "0">
+        <input type = "checkbox" name = "supplier_email" value = "1"> Supplier Email <br>
+        <input type = "hidden" name = "standard" value = "0">
+        <input type = "checkbox" name = "standard" value = "1"> Standard <br>
+        <input type = "hidden" name = "year" value = "0">
+        <input type = "checkbox" name = "year" value = "1"> Year <br>
+        <br>
+        <br>
+        <input type="submit" name="show" value="SHOW"/></div>
+    </body>
+    </html>

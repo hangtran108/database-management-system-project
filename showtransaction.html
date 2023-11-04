@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Supermarket</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+body{    
+    background:url(c2.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+}
+
+h2{
+	font-family:sans-serif;
+	font-size:40px;
+	color: #665517;
+	text-align: center;
+	vertical-align:center;
+	height:50px;
+}
+
+select {
+        width: 150px;
+        margin: 10px;
+        font-size: 15px;
+    }
+
+input{
+    font-family:sans-serif;
+	font-size:18px;
+	margin-left: 150px;
+    }
+
+    .checklist{
+    font-family:sans-serif;
+	font-size:18px;
+	margin-left: 500px;
+}
+
+</style>
+<body>
+<nav class="menu">
+    <ul>
+      <li><a class="navbar-brand" href="web.html">
+      <div class="logo-image">
+            <img src="1234.png" class="img-fluid" width="50" height="50">
+      </div>
+      </a></li>
+        <li><a href  ="about.html">About</a></li>
+		<li><a class="active" href  ="information.html">Information</a></li>
+        <li><a class="active" href  ="search.html">Search</a></li>
+		<li><a class="active" href  ="edit.html">Edit</a></li>
+        <li><a class="active" href  ="add.html">Add</a></li>
+		<li><a href  ="delete.html">Delete</a></li>
+    </ul>
+</form>
+
+</nav>
+
+<center><h2>SELECT ATTRIBUTES TO SHOW TRANSACTION</h2></center>
+<form action="http://localhost/showtransaction.php" method="post">
+    <div class = "checklist">
+        <input type = "hidden" name = "transaction_id" value = "0">
+        <input type = "checkbox" name = "transaction_id" value = "1"> Transaction ID <br>
+        <input type = "hidden" name = "customer_id" value = "0">
+        <input type = "checkbox" name = "customer_id" value = "1"> Customer ID <br>
+        <input type = "hidden" name = "date" value = "0">
+        <input type = "checkbox" name = "date" value = "1"> Date <br>
+        <input type = "hidden" name = "time" value = "0">
+        <input type = "checkbox" name = "time" value = "1"> Time <br>
+        <input type = "hidden" name = "product" value = "0">
+        <input type = "checkbox" name = "product" value = "1"> Product <br>
+        <input type = "hidden" name = "quantity" value = "0">
+        <input type = "checkbox" name = "quantity" value = "1"> Quantity <br>
+        <input type = "hidden" name = "payment_method" value = "0">
+        <input type = "checkbox" name = "payment_method" value = "1"> Payment Method <br>
+        <input type = "hidden" name = "discount" value = "0">
+        <input type = "checkbox" name = "discount" value = "1"> Discount <br>
+        <input type = "hidden" name = "price_per_unit" value = "0">
+        <input type = "checkbox" name = "price_per_unit" value = "1"> Price Per Unit <br>
+        <input type = "hidden" name = "total_price" value = "0">
+        <input type = "checkbox" name = "total_price" value = "1"> Total Price <br>
+        <br>
+        <br>
+        <input type="submit" name="show" value="SHOW"/></div>
+    </body>
+    </html>

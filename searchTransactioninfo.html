@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Supermarket</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+body{    
+    background:url(c3.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+}
+
+h1{
+	font-family:sans-serif;
+	font-size:40px;
+	color: #0E530A;
+	text-align: center;
+	vertical-align:center;
+	height:50px;
+} 
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 50px;
+	font-color: white;
+	font-family: sans-serif;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+</style>
+<body>
+<nav class="menu">
+    <ul>
+      <li><a class="navbar-brand" href="web.html">
+      <div class="logo-image">
+            <img src="1234.png" class="img-fluid" width="50" height="50">
+      </div>
+      </a></li>
+        <li><a href  ="about.html">About</a></li>
+		<li><a class="active" href  ="information.html">Information</a></li>
+        <li><a class="active" href  ="search.html">Search</a></li>
+		<li><a class="active" href  ="edit.html">Edit</a></li>
+        <li><a class="active" href  ="add.html">Add</a></li>
+		<li><a href  ="delete.html">Delete</a></li>
+    </ul>
+</form>
+</nav>
+<form action="http://localhost/searchTransaction.php" method="post">	
+<center><h1> FILL IN TO SEARCH TRANSACTION INFORMATION</h1></center>
+Transaction ID: <br><input type="text" name="transaction_id" >
+	<br>
+	<br>
+	Customer ID: <br><input type="text" name="customer_id" >
+	<br>
+	<br>
+	Shopping Date: <br>
+		from <input type="date" name="date1"> to <input type="date" name="date2" >
+	<br>
+	<br>
+	Shopping Time: <br>
+		from <input type="time" name="time1"> to <input type="time" name="time2" >
+	<br>
+	<br>
+	<input type="submit" value="Submit">
+	<input type="reset" value="Reset">
+	
+	</form>
+	<br>
+	<br>
+	<form action="search.html">
+	<form>
+		<input type="submit" value="Back">
+	</form>
+<div class="footer">
+    <p><center>&copyCopyright Dec 2021 </center></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<html>
+<head>
+<title>Add New Information</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body{    
+    background-color:#2F3035;
+    background:url(c99.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+}
+
+h1{
+	font-family:sans-serif;
+	font-size:40px;
+	color: rgb(22, 107, 5);
+	text-align: center;
+	vertical-align:center;
+	height:50px;
+} 
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 50px;
+	font-color: white;
+	font-family: sans-serif;
+}
+
+select {
+	width: 150px;
+	margin: 10px;
+	font-size: 20px;
+}
+select:focus {
+	min-width: 100px;
+	width: auto;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #665517;
+    text-align: center;
+}
+
+
+</style>
+<body>
+<nav class="menu">
+    <ul>
+      <li><a class="navbar-brand" href="web.html">
+      <div class="logo-image">
+            <img src="1234.png" class="img-fluid" width="50" height="50">
+      </div>
+      </a></li>
+        <li><a href  ="about.html">About</a></li>
+		<li><a class="active" href  ="information.html">Information</a></li>
+        <li><a class="active" href  ="search.html">Search</a></li>
+		<li><a class="active" href  ="edit.html">Edit</a></li>
+        <li><a class="active" href  ="add.html">Add</a></li>
+		<li><a href  ="delete.html">Delete</a></li>
+    </ul>
+</form>
+</nav>
+<br>
+    <h1> FILL IN TO ADD NEW INFORMATION </h1>
+	<form action = "http://localhost/Add.php" method = "post">
+		<center>
+		<form>
+			<select name="f_from"> 
+			<option value="customer" selected>Customer</option> 
+			<option value="product">Product</option> 
+			<option value="supplier">Supplier</option>
+			<option value="transaction">Transaction</option>
+			</select>
+		<br>
+		<br>
+	<br>
+	Customer ID: <br><input type="text" name="TCustomer_id" > 
+	<br>
+	<br>
+	Customer's Name: <br><input type="text" name="CName" >
+	<br>
+	<br>
+	Date Of Birth: <br><input type="date" name="DOB" >
+	<br>
+	<br>
+	Type: <br><input type="text" name="CType" >
+	<br>
+	<br>
+	Point: <br><input type="number" name="Point" >
+	<br>
+	<br>
+	Year: <br><input type="number" name="CYear" >
+	<br>
+	<br>
+	Customer's Address: <br><input type="text" name="CAddress" >
+	<br>
+	<br>
+	Customer's City: <br><input type="text" name="CCity" >
+	<br>
+	<br>
+	Customer's Phone number: <br><input type="number" name="CPhone" >
+	<br>
+	<br>
+	Customer's Email: <br><input type="text" name="CEmail" >
+	<br>
+	<br>
+
+	____________________________________________________________
+	<br>
+	<br>
+	Product ID: <br><input type="text" name="Product_id" > 
+	<br>
+	<br>
+	Supplier ID: <br><input type="text" name="Supplier_id">
+	<br>
+	<br>
+	Product's Name: <br><input type="text" name="PName" > 
+	<br>
+	<br>
+	Category: <br><input type="text" name="Category" > 
+	<br>
+	<br>
+	Brand ID: <br><input type="text" name="Brand_id" > 
+	<br>
+	<br>
+	Brand Name: <br><input type="text" name="Brand_name" > 
+	<br>
+	<br>
+	Arrival Date: <br><input type="date" name="PDate" > 
+	<br>
+	<br>
+	Expiry Date: <br><input type="date" name="Expiry" > 
+	<br>
+	<br>
+	Price: <br><input type="number" name="Price" > 
+	<br>
+	<br>
+	Stock: <br><input type="number" name="Stock" > 
+	<br>
+	<br>
+	Net Weight: <br><input type="text" name="Net_weight" > 
+	<br>
+	<br>
+	Certification: <br><input type="text" name="Certification" > 
+	<br>
+	<br>
+	____________________________________________________________
+	<br>
+	<br>
+	Supplier ID: <br><input type="text" name="PSupplier_id" > 
+	<br>
+	<br>
+	Supplier's Name: <br><input type="text" name="SName" > 
+	<br>
+	<br>
+	Type: <br><input type="text" name="SType" > 
+	<br>
+	<br>
+	Supplier's Address: <br><input type="text" name="SAddress" > 
+	<br>
+	<br>
+	City: <br><input type="text" name="SCity" > 
+	<br>
+	<br>
+	Postcode: <br><input type="text" name="Postcode" > 
+	<br>
+	<br>
+	Supplier's Phone Number: <br><input type="number" name="SPhone" > 
+	<br>
+	<br>
+	Supplier's Email: <br><input type="text" name="SEmail" > 
+	<br>
+	<br>
+	Standard: <br><input type="text" name="Standard" > 
+	<br>
+	<br>
+	Collaborating Year: <br><input type="number" name="SYear" > 
+	<br>
+	<br>
+	____________________________________________________________
+	<br>
+	<br>
+	Transaction ID: <br><input type="text" name="Transaction_id" > 
+	<br>
+	<br>
+	Customer ID: <br><input type="text" name="Customer_id" > 
+	<br>
+	<br>
+	Shopping Date: <br><input type="date" name="TDate" > 
+	<br>
+	<br>
+	Shopping Time: <br><input type="time" name="Time" > 
+	<br>
+	<br>
+	Product's Name: <br><input type="text" name="Product" > 
+	<br>
+	<br>
+	Quantity: <br><input type="number" name="Quantity" > 
+	<br>
+	<br>
+	Payment Method: <br><input type="text" name="Payment_method" > 
+	<br>
+	<br>
+	Discount: <br><input type="number" name="Discount" > 
+	<br>
+	<br>
+	Price Per Unit: <br><input type="number" name="Price_per_unit" > 
+	<br>
+	<br>
+	Total Price: <br><input type="number" name="Total_price" > 
+	<br>
+	<br>
+	<center>
+	<input type="submit" value="Submit">
+	<input type="reset" value="Reset">
+	</form>
+	<form action="add.html" >
+	<form>
+		<input type="submit" value="Back">
+	</form>
+	
+<style type="text.css">
+    </ul>
+
+</div>
+</form>
+<div class="footer">
+    <p><center>Copyright Dec 2021&copy; </center></p>
+</div>
+</body>
+</html>
